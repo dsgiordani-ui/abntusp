@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente ABNT - Diretrizes USP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h1>Assistente ABNT</h1>
+                </div>
+                <p class="subtitle">Tire suas dúvidas sobre as Diretrizes para Dissertações e Teses da USP</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-avatar">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="message-content">
+                            <p>Olá! 👋 Sou seu assistente para as diretrizes ABNT da USP. Posso ajudá-lo com dúvidas sobre:</p>
+                            <ul>
+                                <li>Formatação de trabalhos acadêmicos</li>
+                                <li>Estrutura de dissertações e teses</li>
+                                <li>Citações e referências</li>
+                                <li>Elementos pré-textuais e pós-textuais</li>
+                                <li>Normas de apresentação</li>
+                            </ul>
+                            <p>Faça sua pergunta e eu responderei com base nas diretrizes oficiais!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-questions">
+                    <h3>Perguntas frequentes:</h3>
+                    <div class="quick-buttons">
+                        <button class="quick-btn" onclick="askQuestion('Como fazer citações diretas?')">
+                            <i class="fas fa-quote-left"></i>
+                            Como fazer citações diretas?
+                        </button>
+                        <button class="quick-btn" onclick="askQuestion('Qual a estrutura da folha de rosto?')">
+                            <i class="fas fa-file-alt"></i>
+                            Estrutura da folha de rosto
+                        </button>
+                        <button class="quick-btn" onclick="askQuestion('Como formatar referências?')">
+                            <i class="fas fa-list"></i>
+                            Como formatar referências?
+                        </button>
+                        <button class="quick-btn" onclick="askQuestion('Quais são as margens do documento?')">
+                            <i class="fas fa-ruler"></i>
+                            Margens do documento
+                        </button>
+                    </div>
+                </div>
+
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <input type="text" id="userInput" placeholder="Digite sua pergunta sobre as diretrizes ABNT..." maxlength="500">
+                        <button id="sendButton" onclick="sendMessage()">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <div class="input-info">
+                        <small><i class="fas fa-info-circle"></i> Baseado nas Diretrizes para Dissertações e Teses da USP - 4ª Edição (2020)</small>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2024 - Baseado nas Diretrizes ABNT USP | Desenvolvido para auxiliar estudantes</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
