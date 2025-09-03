@@ -12,11 +12,12 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
 }
 
 /* Header */
@@ -65,7 +66,7 @@ body {
 }
 
 .chat-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
@@ -73,14 +74,16 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
+    min-height: 600px;
 }
 
 .chat-messages {
     flex: 1;
-    padding: 2rem;
+    padding: 2rem 3rem;
     overflow-y: auto;
     scroll-behavior: smooth;
+    min-height: 400px;
 }
 
 .message {
@@ -114,9 +117,11 @@ body {
 .message-content {
     flex: 1;
     background: #f7fafc;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2rem;
     border-radius: 15px;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 1rem;
+    max-width: none;
 }
 
 .user-message .message-content {
@@ -301,9 +306,20 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .chat-container {
+        max-width: 95%;
+        height: 75vh;
+    }
+    
+    .chat-messages {
+        padding: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
-        padding: 0;
+        padding: 0 0.5rem;
     }
 
     .header {
@@ -315,16 +331,22 @@ body {
     }
 
     .main-content {
-        padding: 1rem;
+        padding: 1rem 0.5rem;
     }
 
     .chat-container {
-        height: 75vh;
+        height: 80vh;
         border-radius: 15px;
+        max-width: 100%;
     }
 
     .chat-messages {
         padding: 1.5rem;
+    }
+
+    .message-content {
+        padding: 1rem 1.5rem;
+        font-size: 0.95rem;
     }
 
     .quick-questions {
