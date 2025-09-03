@@ -1,307 +1,234 @@
-// Base de conhecimento das diretrizes ABNT USP
+// Base de conhecimento específica das Diretrizes USP ABNT 2020
 const knowledgeBase = {
-    // Citações
-    citacoes: {
-        keywords: ['citação', 'citar', 'citações', 'referência', 'autor', 'apud'],
-        responses: {
-            direta: {
-                keywords: ['direta', 'diretas', 'textual', 'literal'],
-                answer: `**Citações Diretas** são transcrições integrais de parte da obra consultada. Aqui estão as regras:
-
-📝 **Até 3 linhas:**
-- Incorporar no parágrafo entre aspas duplas
-- Aspas simples para citação dentro da citação
-- Exemplo: Segundo Madigan et al. (2010, p. 89), "as vesículas de gás são estruturas fusiformes..."
-
-📝 **Mais de 3 linhas:**
-- Destacar do texto com recuo de 4 cm da margem esquerda
-- Letra menor que a do texto
-- Sem aspas
-- Exemplo formatado em bloco separado
-
-⚠️ **Importante:** É obrigatória a indicação da página em citações diretas!`
-            },
-            indireta: {
-                keywords: ['indireta', 'indiretas', 'paráfrase'],
-                answer: `**Citações Indiretas** são textos baseados na obra consultada, reproduzindo conteúdo e ideias do documento original:
-
-✅ **Características:**
-- Dispensa o uso de aspas duplas
-- Reproduz o conteúdo com suas próprias palavras
-- Mantém o sentido original da obra
-
-📖 **Exemplo:**
-"A frequência respiratória, se aumentada, seria indicação que o animal está sentindo os efeitos do calor (HAMMOND, 1954)."
-
-💡 **Dica:** A indicação da página é opcional em citações indiretas.`
-            },
-            sistema_autor_data: {
-                keywords: ['sistema autor-data', 'autor data', 'sistema'],
-                answer: `**Sistema Autor-Data** para citações:
-
-👤 **Um autor:** (PEREIRA, 2013) ou Pereira (2013)
-
-👥 **Dois autores:**
-- Entre parênteses: (RAMOS; PESTANA, 2014)
-- Fora de parênteses: Ramos e Pestana (2014)
-
-👥 **Três autores:**
-- Entre parênteses: (OLIVEIRA; FERREIRA; MASCARENHAS, 2013)
-- Fora de parênteses: Oliveira, Ferreira e Mascarenhas (2013)
-
-👥 **Quatro ou mais:** SENA et al. (2012)
-
-📅 **Mesmo autor, mesmo ano:** (GARCIA, 2013a) e (GARCIA, 2013b)`
-            }
-        }
+    // FORMATAÇÃO E APRESENTAÇÃO GRÁFICA
+    "formato papel": {
+        answer: "**Formato do papel:** A4 (21 cm x 29,7 cm), papel branco ou reciclado, digitado na cor preta. Outras cores são permitidas apenas para ilustrações.",
+        keywords: ["formato", "papel", "a4", "tamanho", "dimensões"]
     },
-
-    // Estrutura do trabalho
-    estrutura: {
-        keywords: ['estrutura', 'organização', 'partes', 'elementos'],
-        responses: {
-            folha_rosto: {
-                keywords: ['folha de rosto', 'rosto', 'capa interna'],
-                answer: `**Folha de Rosto** - Elemento obrigatório com informações essenciais:
-
-📋 **Deve conter:**
-- Nome completo do autor
-- Título (letras minúsculas, exceto primeira letra e nomes próprios)
-- Subtítulo (se houver, precedido de dois pontos)
-- Indicação da versão (original ou corrigida)
-- Número de volume (se houver mais de um)
-- Natureza do trabalho (dissertação/tese, objetivo, instituição, área)
-- Nome do orientador e coorientador (se houver)
-- Local (cidade)
-- Ano de depósito
-
-🔄 **Verso da folha de rosto:**
-- Ficha catalográfica (elaborada pela biblioteca)
-- Autorização para reprodução`
-            },
-            elementos_pre_textuais: {
-                keywords: ['pré-textuais', 'pré textuais', 'preliminares'],
-                answer: `**Elementos Pré-textuais** (ordem obrigatória):
-
-✅ **Obrigatórios:**
-- Folha de rosto
-- Ficha catalográfica (verso da folha de rosto)
-- Folha de avaliação/aprovação
-- Resumo em português
-- Resumo em língua estrangeira (Abstract)
-- Sumário
-
-📝 **Opcionais:**
-- Errata
-- Dedicatória(s)
-- Agradecimento(s)
-- Epígrafe(s)
-- Lista de ilustrações
-- Lista de tabelas
-- Lista de abreviaturas e siglas
-- Lista de símbolos`
-            }
-        }
+    
+    "margens": {
+        answer: "**Margens obrigatórias:**\n• **Anverso:** esquerda e superior = 3 cm; direita e inferior = 2 cm\n• **Verso:** direita e superior = 3 cm; esquerda e inferior = 2 cm\n\nEssas medidas são obrigatórias conforme as Diretrizes USP 2020.",
+        keywords: ["margens", "margem", "esquerda", "direita", "superior", "inferior", "anverso", "verso"]
     },
-
-    // Formatação
-    formatacao: {
-        keywords: ['formatação', 'formato', 'margens', 'fonte', 'espaçamento'],
-        responses: {
-            margens: {
-                keywords: ['margens', 'margem'],
-                answer: `**Margens do Documento:**
-
-📄 **Anverso (frente):**
-- Esquerda e superior: 3 cm
-- Direita e inferior: 2 cm
-
-📄 **Verso:**
-- Direita e superior: 3 cm
-- Esquerda e inferior: 2 cm
-
-📏 **Papel:** A4 (21 cm x 29,7 cm), branco ou reciclado
-🎨 **Cor:** Texto em preto (outras cores permitidas para ilustrações)`
-            },
-            fonte_espacamento: {
-                keywords: ['fonte', 'espaçamento', 'tamanho'],
-                answer: `**Fonte e Espaçamento:**
-
-🔤 **Tamanho da fonte:**
-- Texto: tamanho 12
-- Citações longas, notas de rodapé, legendas: tamanho 10 ou 11
-
-📏 **Espaçamento:**
-- Texto geral: 1,5 cm
-- Espaço simples: citações longas, notas de rodapé, referências, legendas, ficha catalográfica
-
-🔄 **Recuos:**
-- Citações longas: 4 cm da margem esquerda
-- Primeira linha de parágrafo: conforme padrão do editor`
-            },
-            paginacao: {
-                keywords: ['paginação', 'numeração', 'páginas'],
-                answer: `**Paginação:**
-
-🔢 **Contagem:**
-- Todas as folhas são contadas a partir da folha de rosto
-- Elementos pré-textuais: contados, mas NÃO numerados
-
-🔢 **Numeração:**
-- Inicia na primeira folha textual (Introdução)
-- Algarismos arábicos
-- Anverso: canto superior direito
-- Verso: canto superior esquerdo
-
-📚 **Múltiplos volumes:**
-- Numeração única e sequencial do primeiro ao último volume`
-            }
-        }
+    
+    "fonte tamanho": {
+        answer: "**Tamanhos de fonte obrigatórios:**\n• **Texto principal:** fonte 12\n• **Citações longas (+ de 3 linhas):** fonte 10 ou 11\n• **Notas de rodapé:** fonte 10 ou 11\n• **Legendas e fontes de ilustrações:** fonte 10 ou 11\n• **Ficha catalográfica:** fonte 10 ou 11\n• **Paginação:** fonte 10 ou 11",
+        keywords: ["fonte", "tamanho", "letra", "size", "12", "10", "11"]
     },
-
-    // Referências
-    referencias: {
-        keywords: ['referências', 'bibliografia', 'referência'],
-        responses: {
-            geral: {
-                keywords: ['como fazer', 'formato', 'modelo'],
-                answer: `**Referências - Regras Gerais:**
-
-📚 **Elementos essenciais:**
-- Autoria
-- Título
-- Edição (se houver)
-- Local de publicação
-- Editora
-- Ano de publicação
-
-📖 **Livro com um autor:**
-SOBRENOME, Nome. **Título**: subtítulo. Edição. Local: Editora, ano.
-
-📖 **Livro com dois autores:**
-SOBRENOME1, Nome; SOBRENOME2, Nome. **Título**. Local: Editora, ano.
-
-📖 **Quatro ou mais autores:**
-SOBRENOME, Nome et al. **Título**. Local: Editora, ano.
-
-🔤 **Organização:** Ordem alfabética (sistema autor-data) ou ordem de aparição (sistema numérico)`
-            }
-        }
+    
+    "espacamento": {
+        answer: "**Espaçamento obrigatório:**\n• **Texto principal:** espaço 1,5 cm\n• **Citações longas:** espaço simples\n• **Notas de rodapé:** espaço simples\n• **Referências:** espaço simples\n• **Ficha catalográfica:** espaço simples\n• **Entre referências:** um espaço simples em branco\n• **Títulos de seções:** separados do texto por 1,5 cm",
+        keywords: ["espaçamento", "espaço", "entrelinhas", "1,5", "simples", "duplo"]
     },
-
-    // Resumo
-    resumo: {
-        keywords: ['resumo', 'abstract'],
-        responses: {
-            geral: {
-                keywords: ['como fazer', 'estrutura', 'tamanho'],
-                answer: `**Resumo:**
-
-📝 **Características:**
-- Parágrafo único
-- 150 a 500 palavras
-- Sequência de frases concisas e objetivas
-- Deve apresentar: objetivos, métodos, resultados e conclusões
-
-🔑 **Palavras-chave:**
-- Logo abaixo do resumo
-- Precedidas pela expressão "Palavras-chave:"
-- Separadas por ponto
-- Preferencialmente do Vocabulário Controlado SIBiUSP
-
-🌐 **Abstract:**
-- Mesmas características do resumo em português
-- Obrigatório em inglês
-- Keywords seguem as mesmas regras`
-            }
-        }
+    
+    // PAGINAÇÃO
+    "paginacao": {
+        answer: "**Paginação USP:**\n• **Contagem:** todas as folhas a partir da folha de rosto são contadas\n• **Numeração:** inicia na primeira folha textual (Introdução)\n• **Posição:** canto superior direito (anverso) e superior esquerdo (verso)\n• **Tipo:** algarismos arábicos\n• **Pré-textuais:** contadas mas NÃO numeradas\n• **Múltiplos volumes:** numeração contínua do primeiro ao último",
+        keywords: ["paginação", "numeração", "página", "folha", "numerar", "contar"]
+    },
+    
+    // ESTRUTURA OBRIGATÓRIA
+    "estrutura trabalho": {
+        answer: "**Estrutura obrigatória do trabalho acadêmico USP:**\n\n**PARTE EXTERNA:**\n• Capa (obrigatório)\n• Lombada (opcional)\n\n**ELEMENTOS PRÉ-TEXTUAIS:**\n• Folha de rosto (obrigatório)\n• Ficha catalográfica (obrigatório)\n• Folha de avaliação (obrigatório)\n• Resumo em português (obrigatório)\n• Abstract em inglês (obrigatório)\n• Sumário (obrigatório)\n\n**ELEMENTOS TEXTUAIS:**\n• Introdução\n• Desenvolvimento\n• Conclusão\n\n**ELEMENTOS PÓS-TEXTUAIS:**\n• Referências (obrigatório)",
+        keywords: ["estrutura", "elementos", "obrigatório", "opcional", "ordem", "sequência"]
+    },
+    
+    "capa": {
+        answer: "**Informações obrigatórias na CAPA (nesta ordem):**\na) Nome da instituição (opcional)\nb) Nome completo do autor\nc) Título em letras minúsculas (exceto primeira letra e nomes próprios)\nd) Subtítulo precedido de dois pontos (se houver)\ne) Número de volumes (se houver)\nf) Local (cidade)\ng) Ano de depósito (entrega)\n\n**Exemplo:** UNIVERSIDADE DE SÃO PAULO → NOME DO AUTOR → Título do trabalho → São Paulo → 2024",
+        keywords: ["capa", "título", "autor", "instituição", "local", "ano"]
+    },
+    
+    "folha rosto": {
+        answer: "**Folha de rosto - informações obrigatórias:**\na) Nome completo do autor\nb) Título (minúsculas, exceto primeira letra)\nc) Subtítulo com dois pontos (se houver)\nd) **'Versão Original' ou 'Versão Corrigida'**\ne) Natureza do trabalho: 'Dissertação apresentada à [Unidade] da Universidade de São Paulo para obtenção do título de Mestre em Ciências. Área de Concentração: [área]'\nf) Nome do orientador e coorientador\ng) Local (cidade)\nh) Ano de depósito\n\n**VERSO:** Ficha catalográfica (elaborada pela biblioteca)",
+        keywords: ["folha de rosto", "natureza", "orientador", "versão original", "versão corrigida"]
+    },
+    
+    // RESUMO
+    "resumo": {
+        answer: "**Resumo - especificações USP:**\n• **Parágrafo único** (sem quebras)\n• **150 a 500 palavras**\n• Deve conter: objetivos, métodos, resultados e conclusões\n• **Palavras-chave:** separadas por ponto, finalizadas por ponto\n• Usar preferencialmente o Vocabulário Controlado SIBiUSP\n• **Precedido da referência completa do documento**\n\n**Abstract:** mesmas características, obrigatório em inglês\n**Keywords:** equivalente às palavras-chave",
+        keywords: ["resumo", "abstract", "palavras-chave", "keywords", "150", "500", "parágrafo único"]
+    },
+    
+    // CITAÇÕES
+    "citacao direta": {
+        answer: "**Citação direta - regras USP:**\n\n**ATÉ 3 LINHAS:**\n• Entre aspas duplas no parágrafo\n• Aspas simples para citação dentro da citação\n• **Página obrigatória**\n\n**MAIS DE 3 LINHAS:**\n• Recuo de **4 cm da margem esquerda**\n• Fonte menor (10 ou 11)\n• Espaço simples\n• Sem aspas\n• **Página obrigatória**\n\n**Exemplo:** Segundo Silva (2020, p. 45), \"texto da citação.\"\n**Citação longa:** [recuo 4cm] texto da citação longa... (SILVA, 2020, p. 45).",
+        keywords: ["citação direta", "aspas", "recuo", "4cm", "página", "três linhas"]
+    },
+    
+    "citacao indireta": {
+        answer: "**Citação indireta (paráfrase):**\n• Reproduz ideias do autor com suas palavras\n• **Sem aspas**\n• Página é opcional (mas recomendada)\n• Deve manter o sentido original\n\n**Exemplo:** A pesquisa demonstrou resultados significativos (SILVA, 2020).\n\n**Sistema autor-data:** (AUTOR, ano) ou Autor (ano)\n**Sistema numérico:** número sobrescrito ou entre parênteses",
+        keywords: ["citação indireta", "paráfrase", "sem aspas", "página opcional"]
+    },
+    
+    "sistema autor-data": {
+        answer: "**Sistema autor-data - regras USP:**\n\n**1 autor:** (SILVA, 2020) ou Silva (2020)\n**2 autores:** (SILVA; SANTOS, 2020) ou Silva e Santos (2020)\n**3 autores:** (SILVA; SANTOS; COSTA, 2020) ou Silva, Santos e Costa (2020)\n**4+ autores:** (SILVA et al., 2020) ou Silva et al. (2020)\n\n**Mesmo autor, mesmo ano:** (SILVA, 2020a) e (SILVA, 2020b)\n**Vários trabalhos:** (SILVA, 2018, 2019, 2020)\n**Autores diferentes:** ordem alfabética (COSTA, 2019; SILVA, 2020)",
+        keywords: ["autor-data", "et al", "múltiplos autores", "mesmo ano", "alfabética"]
+    },
+    
+    // REFERÊNCIAS
+    "referencias": {
+        answer: "**Referências - normas USP:**\n• **Elemento obrigatório**\n• Ordem alfabética (sistema autor-data) ou ordem de aparição (sistema numérico)\n• Espaço simples entre linhas\n• Um espaço simples em branco entre referências\n• **Nota de rodapé:** 'De acordo com a Associação Brasileira de Normas Técnicas (ABNT NBR 6023)'\n• Consultar biblioteca da unidade para verificar norma adotada\n\n**Elementos essenciais:** autor, título, edição, local, editora, ano",
+        keywords: ["referências", "bibliografia", "ordem alfabética", "abnt", "6023"]
+    },
+    
+    "referencia livro": {
+        answer: "**Referência de livro - modelo USP:**\n\n**Um autor:**\nSILVA, J. **Título do livro**. 2. ed. São Paulo: Editora, 2020.\n\n**Dois autores:**\nSILVA, J.; SANTOS, M. **Título do livro**. Rio de Janeiro: Editora, 2020.\n\n**Três autores:**\nSILVA, J.; SANTOS, M.; COSTA, A. **Título do livro**. Brasília: Editora, 2020.\n\n**Quatro ou mais:**\nSILVA, J. et al. **Título do livro**. São Paulo: Editora, 2020.\n\n**Elementos:** AUTOR. **Título**. Edição. Local: Editora, ano.",
+        keywords: ["referência livro", "monografia", "autor", "título", "editora", "local"]
+    },
+    
+    // NUMERAÇÃO PROGRESSIVA
+    "numeracao secoes": {
+        answer: "**Numeração progressiva das seções:**\n• **Seção primária:** 1, 2, 3... (nova folha)\n• **Seção secundária:** 1.1, 1.2, 1.3...\n• **Seção terciária:** 1.1.1, 1.1.2...\n• **Seção quaternária:** 1.1.1.1, 1.1.1.2...\n• **Seção quinária:** 1.1.1.1.1 (limite máximo)\n\n**Títulos sem numeração:** RESUMO, ABSTRACT, SUMÁRIO, REFERÊNCIAS (centralizados)\n**Alíneas:** a), b), c)... (quando necessário subdividir além da quinária)\n**Subalíneas:** - (travessão)",
+        keywords: ["numeração", "seções", "primária", "secundária", "alíneas", "subalíneas"]
+    },
+    
+    // ILUSTRAÇÕES E TABELAS
+    "ilustracoes": {
+        answer: "**Ilustrações - normas USP:**\n• **Identificação:** parte superior (Figura 1 - Título explicativo)\n• **Fonte:** parte inferior (obrigatória, mesmo se própria)\n• **Inserir:** próximo ao texto que se refere\n• **Referência completa:** deve constar nas Referências\n• **Tipos:** desenhos, esquemas, fluxogramas, fotografias, gráficos, mapas, organogramas, plantas, quadros\n\n**Exemplo:**\nFigura 1 - Processo de análise dos dados\n[ilustração]\nFonte: Elaborada pelo autor (2024).",
+        keywords: ["ilustrações", "figuras", "gráficos", "fonte", "legenda", "título"]
+    },
+    
+    "tabelas": {
+        answer: "**Tabelas - critérios IBGE/USP:**\n• **Título:** Tabela 1 - Descrição (parte superior)\n• **Posição:** preferencialmente vertical\n• **Traços:** horizontais fortes no cabeçalho, sem traços verticais\n• **Continuação:** 'continua', 'continuação', 'conclusão'\n• **Fonte:** parte inferior (obrigatória)\n• **Numeração:** consecutiva ou por capítulo (Tabela 4.1)\n• **Significado próprio:** dispensar consulta ao texto\n\n**Exemplo:**\nTabela 1 - Resultados da pesquisa\n[dados]\nFonte: Dados da pesquisa (2024).",
+        keywords: ["tabelas", "ibge", "traços", "numeração", "fonte", "título"]
+    },
+    
+    // ELEMENTOS ESPECÍFICOS
+    "siglas": {
+        answer: "**Siglas - regra USP:**\n• **Primeira menção:** forma completa seguida da sigla entre parênteses\n• **Demais menções:** apenas a sigla\n\n**Exemplo:**\n• 1ª vez: \"a Universidade de São Paulo (USP)\"\n• 2ª vez em diante: \"a USP\"\n\n**Lista de siglas:** elemento opcional quando há muitas siglas no trabalho",
+        keywords: ["siglas", "abreviaturas", "primeira menção", "parênteses", "lista"]
+    },
+    
+    "equacoes": {
+        answer: "**Equações e fórmulas:**\n• **Destacadas:** centralizadas no parágrafo\n• **Numeração:** quando necessário, entre parênteses à direita\n• **Quebra de linha:** antes do = ou após +, -, ×, ÷\n• **No texto:** permitido usar entrelinha maior\n\n**Exemplo:**\nX² + Y² = Z² (1)\n\n(X² + Y²)/5 = n (2)",
+        keywords: ["equações", "fórmulas", "numeração", "centralizada", "quebra"]
+    },
+    
+    "notas rodape": {
+        answer: "**Notas de rodapé:**\n• **Fonte menor** que o texto principal\n• **Separação:** filete de 5 cm da margem esquerda\n• **Numeração:** consecutiva por capítulo\n• **Tipos:** explicativas (comentários) e de referência (documentos)\n• **Sistema numérico:** usar símbolos (* etc.) para notas\n\n**Classificação:**\n• Notas explicativas: complementações\n• Notas de referência: documentos consultados",
+        keywords: ["notas de rodapé", "filete", "numeração", "explicativas", "referência"]
+    },
+    
+    // ELEMENTOS OPCIONAIS
+    "dedicatoria": {
+        answer: "**Dedicatória (opcional):**\n• Elemento sem título\n• Folha distinta\n• Homenagem a pessoa(s)\n• Texto livre, geralmente curto\n\n**Exemplo:** \"À minha esposa, com amor, admiração e gratidão por sua compreensão, carinho, presença e incansável apoio ao longo do período de elaboração deste trabalho.\"",
+        keywords: ["dedicatória", "homenagem", "opcional", "folha distinta"]
+    },
+    
+    "agradecimentos": {
+        answer: "**Agradecimentos (opcional):**\n• Pessoas e instituições que contribuíram\n• **CAPES:** \"O presente trabalho foi realizado com apoio da Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Código de Financiamento 001.\"\n• **FAPESP:** \"processo n. aaaa/nnnn-d, Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP)\"\n• Orientador, instituição, laboratórios, financiamento",
+        keywords: ["agradecimentos", "capes", "fapesp", "financiamento", "orientador"]
+    },
+    
+    "epigrafe": {
+        answer: "**Epígrafe (opcional):**\n• Citação relacionada ao tema\n• Seguida da indicação de autoria\n• **É uma citação direta** - fonte deve constar nas Referências\n• Pode haver epígrafes nas aberturas de capítulos\n\n**Exemplo:**\n\"De todas as dificuldades que uma pessoa tem que enfrentar, a mais sofrida é, sem dúvida, o simples ato de esperar.\" (HOSSEINI, 2007, p. 97).",
+        keywords: ["epígrafe", "citação", "autoria", "referências", "capítulos"]
+    },
+    
+    // INFORMAÇÕES ESPECÍFICAS USP
+    "resolucao copgr": {
+        answer: "**Resolução CoPGr nº 7493/2018:**\n• Dissertações e teses podem ser redigidas em português, inglês ou outro idioma\n• **Obrigatório:** título, resumo e palavras-chave em português E inglês\n• Versão original ou corrigida deve ser indicada\n• Mudança de páginas permitida, mas não do título\n• Coorientação conforme Artigo 81 da Resolução",
+        keywords: ["resolução", "copgr", "7493", "idioma", "português", "inglês", "coorientação"]
+    },
+    
+    "ficha catalografica": {
+        answer: "**Ficha catalográfica:**\n• **Localização:** verso da folha de rosto\n• **Elaboração:** biblioteca da unidade\n• **Autorização:** \"Autorizo a reprodução e divulgação total ou parcial deste trabalho, por qualquer meio convencional ou eletrônico, para fins de estudo e pesquisa, desde que citada a fonte.\"\n• **Consulta:** procurar a biblioteca de origem para confecção",
+        keywords: ["ficha catalográfica", "biblioteca", "verso", "autorização", "reprodução"]
+    },
+    
+    "lombada": {
+        answer: "**Lombada (opcional):**\n• Nome do autor (abreviado se necessário)\n• Título (5 primeiras palavras + reticências se necessário)\n• Elementos de identificação (v. 2)\n• **Impressão:** longitudinal, legível do alto para o pé\n• **Espaço:** 2,5 cm reservado para etiqueta de localização\n• Padrão de encadernação: critério da CPG da Unidade",
+        keywords: ["lombada", "autor", "título", "longitudinal", "encadernação", "cpg"]
     }
 };
 
-// Função para encontrar resposta na base de conhecimento
-function findAnswer(question) {
+// Função para encontrar a melhor resposta
+function findBestAnswer(question) {
     const questionLower = question.toLowerCase();
+    let bestMatch = null;
+    let maxScore = 0;
 
-    // Procura por categoria
-    for (const [category, data] of Object.entries(knowledgeBase)) {
-        // Verifica se a pergunta contém palavras-chave da categoria
-        if (data.keywords.some(keyword => questionLower.includes(keyword))) {
-            // Procura por subcategoria específica
-            for (const [subcat, response] of Object.entries(data.responses)) {
-                if (response.keywords.some(keyword => questionLower.includes(keyword))) {
-                    return response.answer;
-                }
+    // Procura por correspondências exatas ou parciais
+    for (const [key, data] of Object.entries(knowledgeBase)) {
+        let score = 0;
+        
+        // Verifica se a pergunta contém palavras-chave
+        for (const keyword of data.keywords) {
+            if (questionLower.includes(keyword.toLowerCase())) {
+                score += keyword.length; // Palavras mais específicas têm mais peso
             }
-            // Se não encontrou subcategoria específica, retorna a primeira resposta
-            const firstResponse = Object.values(data.responses)[0];
-            return firstResponse.answer;
+        }
+        
+        // Verifica correspondência com a chave
+        if (questionLower.includes(key.toLowerCase())) {
+            score += key.length * 2; // Chave tem peso maior
+        }
+        
+        if (score > maxScore) {
+            maxScore = score;
+            bestMatch = data;
         }
     }
 
-    // Resposta padrão se não encontrar correspondência
-    return `Desculpe, não encontrei uma resposta específica para sua pergunta.
-
-Posso ajudá-lo com:
-- **Citações** (diretas, indiretas, sistema autor-data)
-- **Estrutura do trabalho** (folha de rosto, elementos pré-textuais)
-- **Formatação** (margens, fontes, espaçamento, paginação)
-- **Referências** (como formatar diferentes tipos)
-- **Resumo e Abstract**
-
-Tente reformular sua pergunta ou escolha uma das opções acima! 😊`;
+    return bestMatch;
 }
+
+// Respostas para perguntas não encontradas
+const fallbackResponses = [
+    "Não encontrei informações específicas sobre isso nas Diretrizes USP ABNT 2020. Você poderia reformular sua pergunta ou ser mais específico? Por exemplo: 'Como formatar citações diretas?' ou 'Qual o tamanho da fonte?'",
+    "Essa informação não está clara nas diretrizes que tenho. Tente perguntar sobre: formatação, citações, referências, estrutura do trabalho, margens, fontes, ou elementos específicos como resumo, capa, etc.",
+    "Não localizei essa informação específica. As Diretrizes USP ABNT 2020 que conheço cobrem: apresentação gráfica, citações, referências, estrutura do documento, ilustrações e tabelas. Sobre qual desses temas você gostaria de saber?",
+    "Desculpe, não encontrei essa informação nas diretrizes. Posso ajudar com questões sobre: normas de formatação, tipos de citação, estrutura obrigatória, elementos pré-textuais, pós-textuais, margens, fontes, espaçamento, etc."
+];
+
+// Elementos DOM
+const chatMessages = document.getElementById('chatMessages');
+const userInput = document.getElementById('userInput');
+const sendButton = document.getElementById('sendButton');
 
 // Função para adicionar mensagem ao chat
 function addMessage(content, isUser = false) {
-    const chatMessages = document.getElementById('chatMessages');
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
-
-    messageDiv.innerHTML = `
-        <div class="message-avatar">
-            <i class="fas ${isUser ? 'fa-user' : 'fa-robot'}"></i>
-        </div>
-        <div class="message-content">
-            ${isUser ? `<p>${content}</p>` : formatBotResponse(content)}
-        </div>
-    `;
-
+    
+    const avatar = document.createElement('div');
+    avatar.className = 'message-avatar';
+    avatar.innerHTML = isUser ? '<i class="fas fa-user"></i>' : '<i class="fas fa-graduation-cap"></i>';
+    
+    const messageContent = document.createElement('div');
+    messageContent.className = 'message-content';
+    
+    if (isUser) {
+        messageContent.textContent = content;
+    } else {
+        // Converte markdown básico para HTML
+        const htmlContent = content
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/\*(.*?)\*/g, '<em>$1</em>')
+            .replace(/\n• /g, '\n<br>• ')
+            .replace(/\n/g, '<br>');
+        messageContent.innerHTML = htmlContent;
+    }
+    
+    messageDiv.appendChild(avatar);
+    messageDiv.appendChild(messageContent);
     chatMessages.appendChild(messageDiv);
+    
+    // Scroll para a última mensagem
     chatMessages.scrollTop = chatMessages.scrollHeight;
-}
-
-// Função para formatar resposta do bot
-function formatBotResponse(content) {
-    // Converte markdown básico para HTML
-    let formatted = content
-        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em>$1</em>')
-        .replace(/^- (.*$)/gim, '<li>$1</li>')
-        .replace(/^📝|^✅|^👤|^👥|^📅|^🔢|^📚|^📖|^🔤|^📏|^🔄|^🌐|^🔑/gm, '<strong>$&</strong>');
-
-    // Agrupa itens de lista
-    formatted = formatted.replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>');
-
-    // Quebras de linha
-    formatted = formatted.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>');
-
-    return `<p>${formatted}</p>`;
 }
 
 // Função para mostrar indicador de digitação
 function showTypingIndicator() {
-    const chatMessages = document.getElementById('chatMessages');
     const typingDiv = document.createElement('div');
-    typingDiv.className = 'message bot-message';
-    typingDiv.id = 'typing-indicator';
-
+    typingDiv.className = 'message bot-message typing-message';
     typingDiv.innerHTML = `
         <div class="message-avatar">
-            <i class="fas fa-robot"></i>
+            <i class="fas fa-graduation-cap"></i>
         </div>
         <div class="message-content">
             <div class="typing-indicator">
-                <span>Digitando</span>
+                <span>Consultando as diretrizes</span>
                 <div class="typing-dots">
                     <span></span>
                     <span></span>
@@ -310,85 +237,70 @@ function showTypingIndicator() {
             </div>
         </div>
     `;
-
     chatMessages.appendChild(typingDiv);
     chatMessages.scrollTop = chatMessages.scrollHeight;
+    return typingDiv;
 }
 
-// Função para remover indicador de digitação
-function removeTypingIndicator() {
-    const typingIndicator = document.getElementById('typing-indicator');
-    if (typingIndicator) {
-        typingIndicator.remove();
-    }
-}
-
-// Função para enviar mensagem
-function sendMessage() {
-    const userInput = document.getElementById('userInput');
-    const sendButton = document.getElementById('sendButton');
-    const question = userInput.value.trim();
-
-    if (!question) return;
-
+// Função para processar a pergunta
+function processQuestion(question) {
     // Adiciona mensagem do usuário
     addMessage(question, true);
-
-    // Limpa input e desabilita botão
-    userInput.value = '';
-    sendButton.disabled = true;
-
+    
     // Mostra indicador de digitação
-    showTypingIndicator();
-
+    const typingIndicator = showTypingIndicator();
+    
     // Simula delay de processamento
     setTimeout(() => {
-        removeTypingIndicator();
-        const answer = findAnswer(question);
-        addMessage(answer);
-        sendButton.disabled = false;
-        userInput.focus();
-    }, 1000 + Math.random() * 1000); // 1-2 segundos
-}
-
-// Função para perguntas rápidas
-function askQuestion(question) {
-    const userInput = document.getElementById('userInput');
-    userInput.value = question;
-    sendMessage();
+        // Remove indicador de digitação
+        typingIndicator.remove();
+        
+        // Busca resposta
+        const bestMatch = findBestAnswer(question);
+        
+        let response;
+        if (bestMatch && bestMatch.answer) {
+            response = bestMatch.answer;
+        } else {
+            // Resposta padrão aleatória
+            response = fallbackResponses[Math.floor(Math.random() * fallbackResponses.length)];
+        }
+        
+        // Adiciona resposta do bot
+        addMessage(response);
+    }, 1000 + Math.random() * 1000); // Delay entre 1-2 segundos
 }
 
 // Event listeners
-document.addEventListener('DOMContentLoaded', function() {
-    const userInput = document.getElementById('userInput');
-    const sendButton = document.getElementById('sendButton');
+sendButton.addEventListener('click', () => {
+    const question = userInput.value.trim();
+    if (question) {
+        processQuestion(question);
+        userInput.value = '';
+    }
+});
 
-    // Enter para enviar
-    userInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter' && !sendButton.disabled) {
-            sendMessage();
+userInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        const question = userInput.value.trim();
+        if (question) {
+            processQuestion(question);
+            userInput.value = '';
         }
-    });
+    }
+});
 
-    // Foco no input
-    userInput.focus();
-
-    // Contador de caracteres (opcional)
-    userInput.addEventListener('input', function() {
-        const remaining = 500 - this.value.length;
-        if (remaining < 50) {
-            this.style.borderColor = remaining < 0 ? '#e53e3e' : '#ed8936';
-        } else {
-            this.style.borderColor = '#e2e8f0';
-        }
+// Botões de perguntas rápidas
+document.querySelectorAll('.quick-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        const question = button.textContent.trim();
+        processQuestion(question);
     });
 });
 
-// Função para scroll suave
-function smoothScrollToBottom() {
-    const chatMessages = document.getElementById('chatMessages');
-    chatMessages.scrollTo({
-        top: chatMessages.scrollHeight,
-        behavior: 'smooth'
-    });
-}
+// Mensagem de boas-vindas
+window.addEventListener('load', () => {
+    setTimeout(() => {
+        addMessage("👋 Olá! Sou seu assistente especializado nas **Diretrizes para Apresentação de Dissertações e Teses da USP - 4ª Edição (2020)**.\n\nPosso ajudar com informações específicas sobre:\n• **Formatação** (margens, fontes, espaçamento)\n• **Citações** (diretas, indiretas, autor-data)\n• **Referências** (ABNT NBR 6023)\n• **Estrutura** (elementos obrigatórios e opcionais)\n• **Normas específicas** da USP\n\nFaça sua pergunta ou use os botões abaixo! 📚");
+    }, 500);
+});
